@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Kadijatul Cubra Shrabone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="mark" href="index.html"><i aria-hidden="true"></i>K. C. Shrabone</a>
+      <nav aria-label="Main menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="page-head">
+      <p class="label">Contact</p>
+      <h1>Let's talk about a developer role.</h1>
+      <p class="lead">Send me a message with the form, or write directly to <strong>shrabone23105101160@diu.edu.bd</strong>.</p>
+    </div>
+
+    <form id="contact-form" novalidate>
+      <div class="field">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <span class="error" id="name-error"></span>
+      </div>
+
+      <div class="field">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <span class="error" id="email-error"></span>
+      </div>
+
+      <fieldset>
+        <legend>Reason for contact</legend>
+        <label class="choice"><input type="radio" name="reason" value="job" checked> Job opportunity</label>
+        <label class="choice"><input type="radio" name="reason" value="internship"> Internship</label>
+        <label class="choice"><input type="radio" name="reason" value="collaboration"> Project collaboration</label>
+        <label class="choice"><input type="radio" name="reason" value="hello"> Just saying hello</label>
+      </fieldset>
+
+      <div class="field">
+        <label for="source">How did you find my portfolio?</label>
+        <select id="source" name="source">
+          <option value="github">GitHub</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="university">University</option>
+          <option value="friend">A friend</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write at least 10 characters" required></textarea>
+        <span class="error" id="message-error"></span>
+      </div>
+
+      <label class="choice"><input type="checkbox" id="copy" name="copy"> Send me a copy of this message</label>
+
+      <div><button class="btn primary" type="submit">Send message</button></div>
+      <p id="form-status" role="status" hidden></p>
+    </form>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> Kadijatul Cubra Shrabone</span>
+      <span>Dhaka, Bangladesh</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
